@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1000.0" layoutX="7.0" layoutY="4.0" opacity="0.47" pickOnBounds="true" smooth="false" AnchorPane.bottomAnchor="-4.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="-7.0" AnchorPane.topAnchor="4.0">
+         <image>
+            <Image url="@Background.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="120.0" layoutY="77.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="116.0" prefWidth="667.0" text="Fast Click Game" textFill="WHITE" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="72.0">
+         <font>
+            <Font size="86.0" />
+         </font>
+      </Label>
+      <Label fx:id="PlayLbl" layoutX="115.0" layoutY="281.0" onMouseClicked="#instructionScene" onMouseEntered="#MouseHoverIn" onMouseExited="#MouseHoverOut" prefHeight="69.0" prefWidth="151.0" text="Play" textFill="WHITE" AnchorPane.leftAnchor="110.0" AnchorPane.topAnchor="280.0">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Label>
+      <Label fx:id="ExitLbl" layoutX="110.0" layoutY="380.0" onMouseClicked="#Exit" onMouseEntered="#MouseHoverIn" onMouseExited="#MouseHoverOut" prefHeight="69.0" prefWidth="266.0" text="Exit" textFill="WHITE" AnchorPane.leftAnchor="110.0" AnchorPane.topAnchor="380.0">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Label>
+      <Button layoutX="381.0" layoutY="46.0" mnemonicParsing="false" opacity="0.0" text="Button" />
+      <TextField fx:id="NameTf" layoutX="622.0" layoutY="296.0" prefHeight="37.0" prefWidth="283.0" promptText="Enter your name" style="-fx-border-color: #AAAAAA; -fx-border-width: 5;" />
+      <Label fx:id="ErrorNoNameLbl" layoutX="248.0" layoutY="248.0" text="Please enter your nickname with no spaces:" textFill="RED" visible="false">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

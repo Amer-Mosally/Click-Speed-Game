@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
+   <ImageView fitHeight="607.0" fitWidth="1000.0" layoutY="-4.0" pickOnBounds="true">
+      <Image url="@Background.jpg" />
+   </ImageView>
+   <Label layoutX="284.0" layoutY="26.0" prefHeight="107.0" prefWidth="690.0" text="Game Over" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+      <font>
+         <Font size="92.0" />
+      </font>
+   </Label>
+   <Label fx:id="showScoreLbl" layoutX="380.0" layoutY="275.0" onMouseClicked="#Scores" onMouseEntered="#MouseHoverIn" onMouseExited="#MouseHoverOut" text="Show Score " textFill="WHITE">
+      <font>
+         <Font size="52.0" />
+      </font>
+   </Label>
+   <Label fx:id="scoreNumLbl" layoutX="41.0" layoutY="227.0" text="Your Score is :" textFill="WHITE" visible="false">
+      <font>
+         <Font size="66.0" />
+      </font>
+   </Label>
+   <Label fx:id="ExitLbl" layoutX="98.0" layoutY="483.0" onMouseClicked="#Exit" onMouseEntered="#MouseHoverIn" onMouseExited="#MouseHoverOut" text="Exit" textFill="WHITE" visible="false">
+      <font>
+         <Font size="46.0" />
+      </font>
+   </Label>
+   <Label fx:id="GoToMenuLbl" layoutX="279.0" layoutY="483.0" onMouseClicked="#FirstScene" onMouseEntered="#MouseHoverIn" onMouseExited="#MouseHoverOut" text="Go to menu" textFill="WHITE" visible="false">
+      <font>
+         <Font size="46.0" />
+      </font>
+   </Label>
+   <Label fx:id="TopLbl" layoutX="575.0" layoutY="171.0" text="Top Scores" textFill="RED" visible="false">
+      <font>
+         <Font size="76.0" />
+      </font>
+   </Label>
+   <Label fx:id="topPlayer1" layoutX="575.0" layoutY="275.0" text="------------" textFill="WHITE" visible="false">
+      <font>
+         <Font size="65.0" />
+      </font>
+   </Label>
+   <Label fx:id="topPlayer2" layoutX="575.0" layoutY="363.0" text="------------" textFill="WHITE" visible="false">
+      <font>
+         <Font size="65.0" />
+      </font>
+   </Label>
+   <Label fx:id="topPlayer3" layoutX="575.0" layoutY="457.0" text="------------" textFill="WHITE" visible="false">
+      <font>
+         <Font size="65.0" />
+      </font>
+   </Label>
+</AnchorPane>
